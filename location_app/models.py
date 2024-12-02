@@ -8,6 +8,7 @@ class LocationDetails(models.Model):
     phone_number = models.CharField(unique=True,max_length=20)
     pin_code = models.CharField(max_length=6)
     state = models.CharField(max_length=100)
+    number=models.IntegerField(unique=True,max_length=20)
 
     def __str__(self):
         return self.location
